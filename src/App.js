@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import RestaurantCard from './RestaurantCard';
 import Header from './Header';
+import Footer from './Footer';
 
 class App extends Component {
   state = {
@@ -20,10 +21,9 @@ class App extends Component {
             }
           </div>
         </main>
+
+        <Footer />
       </div>
-
-
-
     )
   }
 }
