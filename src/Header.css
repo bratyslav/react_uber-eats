@@ -1,0 +1,171 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 73px;
+
+  box-shadow: 0 2px 6px rgba(38, 38, 38, 0.16);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px;
+  width: 1px; 
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}  
+
+.delivery-address-mobile {
+  display: none;
+}
+
+@media (max-width: 993px) {
+  .delivery-address {
+    margin-right: 22px;
+  }
+
+  .delivery-address__store-field {
+    width: 57px;
+  }
+
+  .delivery-address__store-input {
+    width: 50px;
+  }
+
+  .delivery-address__user-address-field {
+    width: 215px;
+  }
+
+  .delivery-address__user-address-input {
+    width: 180px;
+  }
+}
+
+
+
+
+
+
+
+
+.log-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log-in__sign-in {
+  color: black;
+  border: 1px solid #E0E0E0;
+}
+
+.log-in__register {
+  color: white;
+  background-color: black;
+}
+
+.log-in__sign-in,
+.log-in__register {
+  width: 80px;
+
+  margin-right: 16px;
+
+  text-align: center;
+  line-height: 38px;
+
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.log-in__register:hover {
+  background-color: #00cd5b;
+}
+
+.log-in__sign-in:hover {
+  background-color: #00cd5b;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+.delivery-address {
+  display: flex;
+  justify-content: center;
+
+  margin-right: 92px;
+  padding: 17px 0 14px;
+}
+
+.delivery-address__to {
+  margin: 13px 4px 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: rgb(180, 180, 180);
+}
+
+.delivery-address__store-field {
+  width: 65px;
+  justify-content: center;
+  padding-left: 4px;
+}
+
+.delivery-address__user-address-field {
+  width: 292px;
+  justify-content: flex-start;
+}
+
+.delivery-address__store-field,
+.delivery-address__user-address-field {
+  display: flex;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+}
+
+.delivery-address__store-input {
+  width: 50px;
+}
+
+.delivery-address input[type="text"]{
+  border: none;
+  outline: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px;
+  width: 1px; 
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.shopping-icon {
+  width: 15px;
+  height: 15px;
+}
