@@ -21,7 +21,8 @@
 }
 
 .search__desactivate {
-  margin-right: 0;
+  padding: 0;
+  margin: 0;
   background-color: rgb(245, 245, 245);
 }
 
@@ -29,18 +30,16 @@
   padding: 15px 5px;
   z-index: 3;
   font-size: 17px;
+  color: green;
   background-color: white;
   cursor: pointer;
   box-sizing: border-box;
   border: 1px solid rgb(220, 220, 220);
   border-top: none;
+  box-shadow: 0px 9px 32px -20px rgba(0,0,0,0.75);
 }
 
 .search__item:hover {
   background-color: rgb(220, 220, 220);
   text-decoration: underline;
-}
-
-.__hidden {
-  display: none;
 }

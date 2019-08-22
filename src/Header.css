@@ -36,8 +36,9 @@ header>div:last-child {
 }
 
 header button {
-  display: flex;
   margin-right: 60px;
+  padding: 5px;
+  display: flex;
 
   font-family: 'Roboto', sans-serif;
   font-size: 19px;
@@ -45,6 +46,10 @@ header button {
   border: none;
 
   cursor: pointer;
+}
+
+.button__wrapper {
+  margin: 25px 60px 25px 0;
 }
 
 .header__button-text {
