@@ -64,3 +64,9 @@ header button {
   text-decoration: none;
   color: black;
 }
+
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
+}
