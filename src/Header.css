@@ -1,249 +1,54 @@
 .header {
+  padding: 28px 80px 28px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  padding: 0px 73px;
-
-  box-shadow: 0 2px 6px rgba(38, 38, 38, 0.16);
+  font-family: 'Roboto', sans-serif;
 }
 
-.header__logo {
-  margin: 22px 0;
-}
-
-.header__wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-h1 {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px;
-  width: 1px; 
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}  
-
-.delivery-address-mobile {
-  display: none;
-}
-
-
-
-
-
-
-
-
-.log-in {
+.header--scrolled {
+  z-index: 2;
+  position: fixed;
+  width: 87.2vw;
+  padding: 28px 80px 28px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0px 10px 26px -19px rgb(150, 150, 150);
 }
 
-.log-in__sign-in {
-  color: black;
-  border: 1px solid #E0E0E0;
-}
-
-.log-in__register {
-  color: white;
-  background-color: black;
-}
-
-.log-in__sign-in,
-.log-in__register {
-  width: 80px;
-
-  margin-right: 16px;
-
-  text-align: center;
-  line-height: 38px;
-
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-}
-
-.log-in__register:hover {
-  background-color: #00cd5b;
-}
-
-.log-in__sign-in:hover {
-  background-color: #00cd5b;
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-.delivery-address {
+header>div {
   display: flex;
-  justify-content: center;
-
-  margin-right: 92px;
 }
 
-.delivery-address__to {
-  margin: 13px 4px 0;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18.75px;
-  color: rgb(180, 180, 180);
+.header__uber-logo {
+  margin-right: 135px;
 }
 
-.delivery-address__store-field {
-  width: 65px;
-  justify-content: center;
-  padding-left: 4px;
-}
-
-.delivery-address__user-address-field {
-  width: 292px;
-  justify-content: flex-start;
-}
-
-.delivery-address__store-field,
-.delivery-address__user-address-field {
-  padding: 5px 0;
+header button {
   display: flex;
-  border: 1px solid #E0E0E0;
-  box-sizing: border-box;
-}
+  margin-right: 60px;
 
-.delivery-address__store-input {
-  width: 50px;
-}
-
-.delivery-address input[type="text"]{
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  background-color: white;
   border: none;
-  outline: none;
 
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  cursor: pointer;
 }
 
-input[type="submit"] {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px;
-  width: 1px; 
-  margin: -1px;
-  padding: 0;
-  border: 0;
+.header__button-text {
+  padding-top: 3px;
 }
 
-.shopping-icon {
-  width: 15px;
-  height: 15px;
+.header__button-icon {
+  margin-right: 10px;
 }
 
+.header__sign-in {
+  margin-top: 3px;
 
-
-
-
-
-
-@media (max-width: 993px) {
-  .delivery-address {
-    margin-right: 22px;
-  }
-
-  .delivery-address__store-field {
-    width: 57px;
-  }
-
-  .delivery-address__store-input {
-    width: 50px;
-  }
-
-  .delivery-address__user-address-field {
-    width: 215px;
-  }
-
-  .delivery-address__user-address-input {
-    margin: 0;
-    width: 180px;
-  }
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
 }
-
-/*MEDIA-TABLET*/
-
-@media (min-width: 780px) and (max-width: 880px) {
-  .header {
-    padding: 0 10px;
-  }
-
-  .delivery-address {
-    margin-right: 88px;
-  }
-  
-  .delivery-address__store-field {
-    width: 57px;
-  }
-
-  .delivery-address__store-input {
-    width: 50px;
-  }
-
-  .delivery-address__user-address-field {
-    width: 215px;
-  }
-
-  .delivery-address__user-address-input {
-    width: 180px;
-  }
-}
-
-/*MEDIA-MOBILE*/
-
-@media (max-width: 779px) {
-  .header {
-    padding: 0 10px;
-  }
-
-  .delivery-address-mobile {
-    margin-top: 40px;
-    display:  flex;
-    justify-content: center;
-  }
-
-  .delivery-address__store-field {
-    width: 57px;
-  }
-
-  .delivery-address__store-input {
-    border: none;
-    outline: none;
-    width: 50px;
-  }
-
-  .delivery-address__user-address-field {
-    width: 180px;
-  }
-
-  .delivery-address__user-address-input {
-    border: none;
-    outline: none;
-    width: 140px;
-  }
-
-  .delivery-address,
-  .shopping-icon {
-    display: none;
-  }
-} 

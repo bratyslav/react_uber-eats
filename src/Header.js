@@ -1,57 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
+const classNames = require('classnames');
 import './Header.css';
 
-const Header = () => {
+const Header = ({ scrolled }) => {
+  
+
+  const headerClassName = classNames({
+    'header': !scrolled,
+    'header--scrolled': scrolled
+  })
+
   return (
-    <header className="header">
-      <a href="#">
+    <header className={headerClassName}>
+      <div>
         <img
+          className="header__uber-logo"
           src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/f8f0721f871b3704cce92eb96bc6e504.svg"
-          alt=""
-          className="header__logo"
+          alt="uber eats logo"
         />
-      </a>
-      <h1>Uber Eats</h1>
 
-      <div  className="header__wrapper">
-        <form action="#" method="POST">
-          <div className="delivery-address">
-            <div className="delivery-address__store-field">
-              <input 
-                type="text" 
-                className="delivery-address__store-input" 
-                name="store" 
-                aria-describedby="store address"
-              />
-            </div>
-
-            <div className="delivery-address__to">
-              to
-            </div>
-
-            <div className="delivery-address__user-address-field">
-
-              <svg width="28px" height="28px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.0001 2.83398c2 0 4.0833.75 5.5833 2.33334 3.0833 3.08333 3.0833 8.16668 0 11.16668l-5.5833 5.6667-5.58335-5.5834c-3.08334-3.0833-3.08334-8.16665 0-11.24998 1.5-1.58334 3.58335-2.33334 5.58335-2.33334zm0 15.66672 3.8333-3.8334c2.0833-2.1666 2.0833-5.58332 0-7.74998-1-1-2.4167-1.58334-3.8333-1.58334-1.4167 0-2.83335.58334-3.83335 1.58334-2.08334 2.16666-2.08334 5.58338 0 7.74998zm1.6666-7.75c0 .9204-.7462 1.6666-1.6666 1.6666-.9205 0-1.6667-.7462-1.6667-1.6666 0-.92052.7462-1.66672 1.6667-1.66672.9204 0 1.6666.7462 1.6666 1.66672z" fillRule="evenodd" clipRule="evenodd" fill="#1F1F1F"></path></svg>
-              <input 
-                type="text" 
-                className="delivery-address__user-address-input" 
-                name="user-address" 
-                aria-describedby="user address"
-              />
-            </div>  
+        <button>
+          <div className="header__button-icon">
+            <svg width="28px" height="28px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.0001 2.83398c2 0 4.0833.75 5.5833 2.33334 3.0833 3.08333 3.0833 8.16668 0 11.16668l-5.5833 5.6667-5.58335-5.5834c-3.08334-3.0833-3.08334-8.16665 0-11.24998 1.5-1.58334 3.58335-2.33334 5.58335-2.33334zm0 15.66672 3.8333-3.8334c2.0833-2.1666 2.0833-5.58332 0-7.74998-1-1-2.4167-1.58334-3.8333-1.58334-1.4167 0-2.83335.58334-3.83335 1.58334-2.08334 2.16666-2.08334 5.58338 0 7.74998zm1.6666-7.75c0 .9204-.7462 1.6666-1.6666 1.6666-.9205 0-1.6667-.7462-1.6667-1.6666 0-.92052.7462-1.66672 1.6667-1.66672.9204 0 1.6666.7462 1.6666 1.66672z" fillRule="evenodd" clipRule="evenodd" fill="#1F1F1F"></path></svg>
           </div>
+          <div className="header__button-text">
+            London
+          </div>
+        </button>
 
-        <input type="submit" name="submit_delivery_address" />
-      </form>
+        <button>
+          <div className="header__button-icon">
+            <svg width="28px" height="28px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m2.83325 12.0007c0-5.08338 4.08334-9.16672 9.16665-9.16672 5.0834 0 9.1667 4.08334 9.1667 9.16672 0 5.0833-4.0833 9.1666-9.1667 9.1666-5.08331 0-9.16665-4.0833-9.16665-9.1666zm2.5 0c0 3.6666 3 6.6666 6.66665 6.6666 3.6667 0 6.6667-3 6.6667-6.6666 0-3.66672-3-6.66672-6.6667-6.66672-3.66665 0-6.66665 3-6.66665 6.66672zm5.41665 2.0833v-6.25002h2.5v3.75002h2.9167v2.5z" fill="#1F1F1F" fillRule="evenodd"></path></svg>
+          </div>
+          <div className="header__button-text">
+            Deliver now
+          </div>
+        </button>
+      </div>
 
-      <div className="log-in">
-        <a className="log-in__sign-in" href="#">Sign In</a>
-        <a className="log-in__register" href="#">Register</a>
-        <a href="#" className="shopping-icon">
-          <img src={require("./images/shopping-cart.svg")} alt="link to shop" />
-        </a>  
-      </div> 
-    </div>
+
+
+      <div>
+        <button>
+          <div className="header__button-icon">
+            <svg width="28px" height="28px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m20.8333 19-3.6666-3.6667c.9167-1.3333 1.4999-2.9166 1.4999-4.6666 0-4.33334-3.5833-7.9167-7.9167-7.9167-4.33331 0-7.91665 3.58336-7.91665 7.9167 0 4.3333 3.58334 7.9167 7.91665 7.9167 1.75 0 3.3334-.5834 4.6668-1.5001l3.6666 3.6667zm-15.50005-8.25c0-2.99999 2.41667-5.41666 5.41665-5.41666 3 0 5.4167 2.41667 5.4167 5.41666 0 3-2.4167 5.4167-5.4167 5.4167-2.99998 0-5.41665-2.4167-5.41665-5.4167z" fill="#1F1F1F"></path></svg>
+          </div>
+          <div className="header__button-text">
+            Search
+          </div>
+        </button>
+
+        <a href="#" className="header__sign-in">Sign in</a>
+      </div>
     </header>
   )
 }

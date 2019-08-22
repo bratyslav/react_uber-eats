@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5 {
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*CONTENT*/
@@ -15,6 +16,14 @@ body {
   grid-column-gap: 15px;
   justify-content: center;
   margin-top: 20px;
+}
+
+.content--scrolled {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 15px;
+  justify-content: center;
+  margin-top: 115px;
 }
 
 main {
