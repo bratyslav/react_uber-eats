@@ -99,3 +99,26 @@
 .nav__app-stores img:not(:last-child) {
   margin-right: 40px;
 }
+
+
+
+
+
+
+
+
+@media (min-width: 750px) and (max-width: 880px) {
+  .footer {
+    padding: 65px 8px 15px;
+  }
+}
+
+@media (max-width: 749px) {
+  .footer {
+    padding: 65px 8px 15px;
+  }
+
+  .nav {
+    display: inline !important;
+  }
+} 
