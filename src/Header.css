@@ -1,15 +1,17 @@
 .header {
-  padding: 28px 80px 28px;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
+  height: 91px;
 }
 
 .header--scrolled {
+  width: 100%;
   z-index: 2;
   position: fixed;
-  width: 87.2vw;
-  padding: 28px 80px 28px;
+  height: 91px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -19,6 +21,14 @@
 
 header>div {
   display: flex;
+}
+
+header>div:first-child {
+  margin-left: 80px;
+}
+
+header>div:last-child {
+  margin-right: 80px;
 }
 
 .header__uber-logo {
@@ -46,8 +56,10 @@ header button {
 }
 
 .header__sign-in {
-  margin-top: 3px;
+  padding-top: 31px;
+}
 
+.header__sign-in a {
   font-size: 19px;
   text-decoration: none;
   color: black;
