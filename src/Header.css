@@ -19,33 +19,8 @@
   box-shadow: 0px 10px 26px -19px rgb(150, 150, 150);
 }
 
-header>div {
-  display: flex;
-}
-
-header>div:first-child {
-  margin-left: 80px;
-}
-
-header>div:last-child {
-  margin-right: 80px;
-}
-
 .header__uber-logo {
   margin-right: 135px;
-}
-
-header button {
-  margin-right: 60px;
-  padding: 5px;
-  display: flex;
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 19px;
-  background-color: white;
-  border: none;
-
-  cursor: pointer;
 }
 
 .button__wrapper {
@@ -74,4 +49,36 @@ header button {
   .header {
     flex-direction: column;
   }
+}
+
+
+
+
+
+
+/*FOR CHILDREN*/
+
+header>div {
+  display: flex;
+}
+
+header>div:first-child {
+  margin-left: 80px;
+}
+
+header>div:last-child {
+  margin-right: 80px;
+}
+
+header button {
+  margin-right: 60px;
+  padding: 5px;
+  display: flex;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  background-color: white;
+  border: none;
+
+  cursor: pointer;
 }

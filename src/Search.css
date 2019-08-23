@@ -24,6 +24,7 @@
   background-color: rgb(245, 245, 245);
   color: grey;
   margin-right: 0;
+  padding: 0;
 }
 
 .search__desactivate {
