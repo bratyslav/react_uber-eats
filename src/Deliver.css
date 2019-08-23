@@ -15,8 +15,6 @@
 .deliver__items div {
   padding: 15px 5px;
   box-sizing: border-box;
-  border: 1px solid rgb(220, 220, 220);
-  border-top: none;
 }
 
 .deliver__items div:hover {

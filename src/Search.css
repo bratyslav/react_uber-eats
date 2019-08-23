@@ -1,12 +1,12 @@
 .search--active__wrapper {
-  margin-right: 60px;
   background-color: rgb(245, 245, 245);
-  margin-top: 20px;
+  margin: 20px 60px 0 0;
 }
 
 .search--active {
   display: flex;
   padding: 9px;
+  border-bottom: 2px solid black;
 }
 
 .search--active input {
@@ -18,6 +18,11 @@
 
 .search--active input:focus {
   outline: none;
+}
+
+.search__clear {
+  background-color: rgb(245, 245, 245);
+  margin-right: 0;
 }
 
 .search__desactivate {
@@ -42,4 +47,13 @@
 .search__item:hover {
   background-color: rgb(220, 220, 220);
   text-decoration: underline;
+}
+
+.search__animation {
+  margin-right: 200px;
+}
+
+.search__wrapper {
+  margin: 25px 60px 25px 0;
+  transition: margin-right 10000ms;
 }
