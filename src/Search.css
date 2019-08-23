@@ -22,6 +22,7 @@
 
 .search__clear {
   background-color: rgb(245, 245, 245);
+  color: grey;
   margin-right: 0;
 }
 
@@ -47,13 +48,4 @@
 .search__item:hover {
   background-color: rgb(220, 220, 220);
   text-decoration: underline;
-}
-
-.search__animation {
-  margin-right: 200px;
-}
-
-.search__wrapper {
-  margin: 25px 60px 25px 0;
-  transition: margin-right 10000ms;
 }
