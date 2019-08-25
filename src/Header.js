@@ -26,7 +26,7 @@ const Header = ({ scrolled }) => {
 
       <div>
         <Search />
-        <div  className="header__sign-in">
+        <div  className="button__wrapper">
           <a href="#">Sign in</a>
         </div>
       </div>
