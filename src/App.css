@@ -47,3 +47,15 @@ main {
 .main-content-wrapper {
   margin-top: 50px;
 }
+
+@media (max-width: 1015px) {
+  main {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    padding: 35px 20px;
+  }
+}
