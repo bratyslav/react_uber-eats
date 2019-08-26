@@ -1,0 +1,13 @@
+.location__bottom-list-element div:last-child {
+  color: grey;
+  max-width: 280px;
+}
+
+.location__animation-max-margin {
+  margin-right: 140px;
+}
+
+.location__animation-min-margin {
+  margin-right: 0;
+  transition: margin-right 1000ms;
+}

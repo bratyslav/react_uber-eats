@@ -1,0 +1,16 @@
+.search__bottom-list-element {
+  color: green;
+}
+
+.search__bottom-list-element:hover {
+  text-decoration: underline;
+}
+
+.search__animation-max-margin {
+  margin-right: 140px;
+}
+
+.search__animation-min-margin {
+  margin-right: 0;
+  transition: margin-right 1000ms;
+}
