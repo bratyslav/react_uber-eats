@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="nav__app-stores">
           <a href="#">
             <img
-              src="https://bratyslav.github.io/uber-eats/images/googleplay-icon.png"
+              src="https://bratyslav.github.io/uber-eats/images/appstore-icon.png"
               alt="link to app sore"
             />
           </a>

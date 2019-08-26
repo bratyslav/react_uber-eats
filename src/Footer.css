@@ -96,7 +96,7 @@
   line-height: 44px;
 }
 
-.nav__app-stores img:not(:last-child) {
+.nav__app-stores a:not(:last-child) {
   margin-right: 40px;
 }
 
