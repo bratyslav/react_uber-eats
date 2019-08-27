@@ -1,0 +1,148 @@
+/*SEARCH*/
+
+.search {
+  display: none;
+}
+
+.search form {
+  line-height: 39px;
+}
+
+.search__underline {
+  display: none;
+  height: 1px;
+  border: none;
+  background-color: rgb(209, 209, 209);  
+}
+
+.search input {
+  border: none;
+  outline: none;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.search__icon {
+  width: 30px;
+  height: 39px;
+
+  background: url('https://bratyslav.github.io/uber-eats/images/search_icon.png') center no-repeat;
+}
+
+/*LOCATION BLOCK*/
+
+.location-block {
+  display: none;
+}
+
+.location-block__delivery-time-wrapper {
+  width: 73px;
+  margin-right: 12px;
+}
+
+.location-block__location-wrapper {
+  width: 255px;
+}
+
+.location-block__delivery-time, .location-block__location {
+  margin-top: 6px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.location-block__delivery-time {
+  padding: 13px 16px;
+}
+
+.location-block__location {
+  display: flex;
+  padding: 10px 16px;
+}
+
+.location-block_delovery-time-input {
+  width: 35px;
+}
+
+.location-block_location-input {
+  display: block;
+}
+
+.location-block_location-input,
+.location-block_delovery-time-input {
+  outline: none;
+  border: none;
+}
+
+/*CONTENT*/
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 15px;
+  justify-content: center;
+  margin-top: 115px;
+}
+
+.content--scrolled {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 15px;
+  justify-content: center;
+  margin-top: 115px;
+}
+
+main {
+  padding: 35px 80px;
+}
+
+.headline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.main-content-wrapper {
+  margin-top: 50px;
+}
+
+@media (max-width: 1015px) {
+  main {
+    padding: 35px;
+  }
+
+  .content, .content--scrolled {
+    margin-top: 40px;
+  }
+
+  .location-block {
+    display: flex;
+    height: 73px;
+    margin-top: 115px;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    padding: 35px 20px;
+  }
+
+  .content, .content--scrolled {
+    margin-top: 40px;
+  }
+
+  .search {
+    display: flex;
+    margin-top: 115px;
+  }
+
+  .search__underline {
+    display: block;
+  }
+
+  .location-block {
+    margin-top: 40px;
+  }
+}

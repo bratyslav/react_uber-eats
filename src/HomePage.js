@@ -1,4 +1,5 @@
 import React from 'react';
+import './HomePage.css';
 import RestaurantCard from './RestaurantCard';
 import { londonShops } from './API/londonShops';
 const classNames = require('classnames');

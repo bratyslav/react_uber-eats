@@ -41,6 +41,11 @@
 .nav a {
   text-decoration: none;
   color: white;
+  transition: color 100ms;
+}
+
+.nav a:hover {
+  color: green;
 }
 
 .nav__language {

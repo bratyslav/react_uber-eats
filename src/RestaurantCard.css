@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  transition: all .2s;
+}
+
+.restaurant-card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .restaurant-card__wrapper-link {
@@ -21,7 +28,7 @@
   transition: top 0.3s ease-out 0s;
 }
 
-.restaurant-card__image:hover {
+.restaurant-card_image:hover {
   top: -8px;
 }
 
