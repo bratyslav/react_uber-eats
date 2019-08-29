@@ -1,0 +1,201 @@
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  height: 91px;
+}
+
+.header--scrolled {
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  height: 91px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0px 10px 26px -19px rgb(150, 150, 150);
+}
+
+
+
+
+
+
+/*FOR CHILDREN*/
+
+.header__uber-logo {
+  margin-right: 135px;
+}
+
+header>div {
+  display: flex;
+}
+
+header>div:first-child {
+  margin-left: 80px;
+}
+
+header>div:last-child {
+  margin-right: 80px;
+}
+
+.button__wrapper {
+  margin: 30px 0 30px;
+}
+
+.button__wrapper a {
+  display: block;
+  margin-top: 4px;
+
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
+  transition: all 150ms;
+}
+
+.button__wrapper a:hover {
+  transform: scale(1.1);
+}
+
+header button {
+  margin-right: 60px;
+  display: flex;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  background-color: white;
+  border: none;
+
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+header button:hover {
+  transform: scale(1.1);
+}
+
+.header__button-text {
+  padding-top: 3px;
+}
+
+.header__button-icon {
+  margin-right: 10px;
+}
+
+.header__item--active-wrapper {
+  background-color: rgb(245, 245, 245);
+  margin: 20px 60px 0 0;
+}
+
+.header__item--active {
+  display: flex;
+  padding: 9px;
+  border-bottom: 2px solid black;
+}
+
+.header__item--active-input {
+  width: 10px;
+  font-size: 17px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+
+.header__item--active-input-animation {
+  width: 180px;
+  font-size: 17px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  transition: width 500ms;
+}
+
+.header__item--active input:focus {
+  outline: none;
+}
+
+.header__item-clear-button {
+  background-color: rgb(245, 245, 245);
+  color: grey;
+  margin-right: 0;
+  padding: 0;
+}
+
+.header__item-desactivate-button {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.header__item-bottom-list-element {
+  padding: 15px 5px;
+  z-index: 3;
+  font-size: 17px;
+  background-color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid rgb(220, 220, 220);
+  border-top: none;
+  box-shadow: 0px 9px 32px -20px rgba(0,0,0,0.75);
+}
+
+.header__item-bottom-list-element:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+
+
+
+
+/*MEDIA*/
+
+@media (max-width: 1250px) {
+  .header__uber-logo {
+    margin-right: 20px;
+  }
+
+  header button {
+    margin-right: 15px;
+  }
+
+  .header__item--active-wrapper {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1015px) {
+  header>div:first-child {
+    margin-left: 35px;
+  }
+  
+  header>div:last-child {
+    margin-right: 35px;
+  }
+
+  header>div:first-child .button__wrapper {
+    display: none;
+  }
+
+  header>div:first-child .header__item--active-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  header>div:last-child .button__wrapper:first-child {
+    display: none;
+  }
+
+  header>div:last-child .header__item--active-wrapper {
+    display: none;
+  }
+
+  header>div:first-child {
+    margin-left: 20px;
+  }
+  
+  header>div:last-child {
+    margin-right: 20px;
+  }
+}

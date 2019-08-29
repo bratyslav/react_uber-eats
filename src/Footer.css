@@ -1,0 +1,130 @@
+.footer {
+  padding: 65px 80px 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+
+  background-color: rgb(41, 41, 41);
+}
+
+.footer hr {
+  height: 1px;
+  border: none;
+  background-color: rgb(150, 150, 150);  
+}
+
+.footer__logo-wrapper {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.footer__logo {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  align-items: center;
+  line-height: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 100ms;
+}
+
+.nav a:hover {
+  color: green;
+}
+
+.nav__language {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  height: 40px;
+}
+
+.nav__language-select {
+  outline: none;
+  width: 227px;
+  padding: 12px 0 12px 48px;
+
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background-color: #3B3B3B;
+  background-image: url('https://bratyslav.github.io/uber-eats/world.svg'), url('https://bratyslav.github.io/uber-eats/select-icon.svg');
+  background-position: left 16px top 12px, right 8px top 16px;
+  background-repeat: no-repeat;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.nav__hashtag {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.nav__hashtag .hashtag__hash {
+  color: #49A144;
+}
+
+.nav__horizontal-line {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.nav__app-stores {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 8;
+
+  margin: auto;
+  margin-top: 17px;
+  line-height: 44px;
+}
+
+.nav__app-stores a:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 750px) and (max-width: 880px) {
+  .footer {
+    padding: 65px 8px 15px;
+  }
+}
+
+@media (max-width: 749px) {
+  .footer {
+    padding: 65px 8px 15px;
+  }
+
+  .nav {
+    display: inline !important;
+  }
+} 
